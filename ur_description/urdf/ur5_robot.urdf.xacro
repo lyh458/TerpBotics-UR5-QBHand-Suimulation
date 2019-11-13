@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro"
+       name="ur5" >
+
+  <xacro:arg name="transmission_hw_interface" default="hardware_interface/PositionJointInterface"/>
+
+  <!-- common stuff -->
+  <xacro:include filename="$(find ur_description)/urdf/common.gazebo.xacro" />
+
+  <!-- ur5 -->
+  <xacro:include filename="$(find ur_description)/urdf/ur5.urdf.xacro" />
+
+  <!-- arm -->
+  <xacro:ur5_robot prefix="" joint_limited="false"
+    transmission_hw_interface="$(arg transmission_hw_interface)"
+  />
+
+  <!-- qbsofthand -->
+ <!-- <xacro:include filename="$(find ur_description)/urdf/qbhand.utils.xacro"/>
+
+  <link name="world" />
+  <joint name="world_joint" type="fixed">
+    <parent link="world" />
+    <child link = "base_link" />
+    <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+  </joint>
+
+	<link name="ee_qb"/>
+	<xacro:build_hand_from_yaml configuration="qbhand_right" namespace="$(arg namespace)" parent="ee_link">
+		<origin xyz="0 0 0" rpy="0 0 0"/>
+	</xacro:build_hand_from_yaml> -->
+</robot>
