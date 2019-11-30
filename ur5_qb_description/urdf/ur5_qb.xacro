@@ -9,31 +9,31 @@
 	<xacro:arg name="namespace" default="qbhand"/>
 
     <link name="world" />
-	<link name="table" />
-	<link name="camera_frame">
+	<!-- <link name="table" /> -->
+	<!-- <link name="camera_frame">
 		<visual>
 			<geometry>
-				<box size="0.5 1 1"/>
+				<box size="0.25 0.5 0.5"/>
 			</geometry>
 		</visual>
 		<collision>
 			<geometry>
-				<box size="0.5 1 1"/>
+				<box size="0.25 0.5 0.5"/>
 			</geometry>
 		</collision>
 	</link>
-
+ -->
 	<xacro:build_hand_from_yaml configuration="qbhand_left" namespace="$(arg namespace)" parent="ee">
 		<origin xyz="0 0 0" rpy="0 1.57 0"/>
 	</xacro:build_hand_from_yaml>
 
-	<joint name="world_to_table" type="fixed">
+	<joint name="world_to_robot" type="fixed">
 		<parent link="world" />
-		<child link = "table" />
-		<origin xyz="0 0 0.25" rpy="0.0 0.0 0.0" />
+		<child link = "base_link" />
+		<origin xyz="0 0 0.5" rpy="0.0 0.0 0.0" />
 	</joint>
 
-	<joint name="world_to_camera" type="fixed">
+<!-- 	<joint name="world_to_camera" type="fixed">
 		<parent link="world" />
 		<child link = "camera_frame" />
 		<origin xyz="0.0 0.0 0" rpy="0.0 1.571 0.0" />
@@ -42,7 +42,7 @@
 		<parent link="table" />
 		<child link = "base_link" />
 		<origin xyz="0.0 0.0 0" rpy="0.0 0.0 0.0" />
-	</joint>
+	</joint> -->
 
 <!-- 	<joint name="ur5_to_qb" type="revolute">
 		 <axis xyz="0 0 1"/>
