@@ -5,8 +5,8 @@
   <description>
      An automatically generated package with all the configuration and launch files for using the ur5_qb with the MoveIt! Motion Planning Framework
   </description>
-  <author email="sandeep.kota1997@gmail.com">Sandeep</author>
-  <maintainer email="sandeep.kota1997@gmail.com">Sandeep</maintainer>
+  <author email="satyarth@umd.edu">Satyarth Praveen</author>
+  <maintainer email="satyarth@umd.edu">Satyarth Praveen</maintainer>
 
   <license>BSD</license>
 

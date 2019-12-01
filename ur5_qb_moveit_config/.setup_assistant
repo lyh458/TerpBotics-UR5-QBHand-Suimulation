@@ -6,6 +6,6 @@ moveit_setup_assistant_config:
   SRDF:
     relative_path: config/ur5_qb.srdf
   CONFIG:
-    author_name: Sandeep
-    author_email: sandeep.kota1997@gmail.com
-    generated_timestamp: 1574195235
+    author_name: Satyarth Praveen
+    author_email: satyarth@umd.edu
+    generated_timestamp: 1575198136
