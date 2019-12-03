@@ -1,11 +1,11 @@
 moveit_setup_assistant_config:
   URDF:
     package: ur5_qb_description
-    relative_path: urdf/ur5_qb.xacro
+    relative_path: urdf/ur5_qb_new.urdf.xacro
     xacro_args: "--inorder "
   SRDF:
-    relative_path: config/ur5_qb.srdf
+    relative_path: config/ur5_qb_new.srdf
   CONFIG:
-    author_name: Sandeep
+    author_name: Sandeep Kota
     author_email: sandeep.kota1997@gmail.com
-    generated_timestamp: 1574195235
+    generated_timestamp: 1575370445

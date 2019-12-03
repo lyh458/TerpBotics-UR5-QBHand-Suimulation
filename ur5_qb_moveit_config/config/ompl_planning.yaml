@@ -120,8 +120,8 @@ planner_configs:
     sparse_delta_fraction: 0.25  # delta fraction for connection distance. This value represents the visibility range of sparse samples. default: 0.25
     dense_delta_fraction: 0.001  # delta fraction for interface detection. default: 0.001
     max_failures: 5000  # maximum consecutive failure limit. default: 5000
-Manipulator:
-  default_planner_config: ""
+ur_arm:
+  default_planner_config: RRTConnect
   planner_configs:
     - SBL
     - EST
@@ -146,10 +146,10 @@ Manipulator:
     - LazyPRMstar
     - SPARS
     - SPARStwo
-  projection_evaluator: joints(shoulder_pan_joint,shoulder_lift_joint)
+  projection_evaluator: joints(ur_shoulder_pan_joint,ur_shoulder_lift_joint)
   longest_valid_segment_fraction: 0.005
-Robot:
-  default_planner_config: None
+qbhand:
+  default_planner_config: RRTConnect
   planner_configs:
     - SBL
     - EST
@@ -174,5 +174,3 @@ Robot:
     - LazyPRMstar
     - SPARS
     - SPARStwo
-  projection_evaluator: joints(shoulder_pan_joint,shoulder_lift_joint)
-  longest_valid_segment_fraction: 0.005

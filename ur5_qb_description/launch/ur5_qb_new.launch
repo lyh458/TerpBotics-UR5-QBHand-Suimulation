@@ -1,0 +1,12 @@
+<launch>
+	<arg name="gui" default="true"/>
+ 
+<!--   <arg name="transmission_hw_interface" default="hardware_interface/PositionJointInterface" /> -->
+
+  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find ur5_qb_description)/urdf/ur5_qb_new.urdf.xacro'"/>
+ <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" >
+    <param name="use_gui" value="true"/>
+  </node>
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+	<node name="rviz" pkg="rviz" type="rviz" if="$(arg gui)" />
+</launch>

@@ -3,10 +3,10 @@
   <name>ur5_qb_moveit_config</name>
   <version>0.3.0</version>
   <description>
-     An automatically generated package with all the configuration and launch files for using the ur5_qb with the MoveIt! Motion Planning Framework
+     An automatically generated package with all the configuration and launch files for using the ur5_qb_new with the MoveIt! Motion Planning Framework
   </description>
-  <author email="sandeep.kota1997@gmail.com">Sandeep</author>
-  <maintainer email="sandeep.kota1997@gmail.com">Sandeep</maintainer>
+  <author email="sandeep.kota1997@gmail.com">Sandeep Kota</author>
+  <maintainer email="sandeep.kota1997@gmail.com">Sandeep Kota</maintainer>
 
   <license>BSD</license>
 
