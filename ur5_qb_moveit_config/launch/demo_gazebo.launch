@@ -23,6 +23,8 @@
   <arg name="paused" default="false"/>
   <!-- By default, use the urdf location provided from the package -->
   <arg name="urdf_path" default="$(find ur5_qb_description)/urdf/ur5_qb_new.urdf.xacro"/>
+  
+ 
 
   <!-- launch the gazebo simulator and spawn the robot -->
   <include file="$(find ur5_qb_moveit_config)/launch/gazebo.launch" >

@@ -3,7 +3,7 @@
  
 <!--   <arg name="transmission_hw_interface" default="hardware_interface/PositionJointInterface" /> -->
 
-  <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find ur5_qb_description)/urdf/ur5_qb_new.urdf.xacro'"/>
+  <param name="robot_description" command="xacro --inorder '$(find ur5_qb_description)/urdf/ur5_qb_new.urdf.xacro'"/>
  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" >
     <param name="use_gui" value="true"/>
   </node>
