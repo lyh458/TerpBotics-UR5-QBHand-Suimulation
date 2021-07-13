@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://wiki.ros.org/xacro" name="ur5_qb_new" >
-  <xacro:include filename="$(find ur_description)/urdf/ur5.urdf.xacro" />
+  <xacro:include filename="$(find ur_description_old)/urdf/ur5.urdf.xacro" />
   <xacro:ur5_robot prefix="ur_" joint_limited="false"/>
 
   <!-- <xacro:arg name="initial_z" default="1.0"/> -->
